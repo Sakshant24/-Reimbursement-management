@@ -11,6 +11,10 @@ app.get('/health', (req, res) => {
   res.status(200).json({ success: true });
 });
 
+// Mount Routes
+const authRoutes = require('./routes/auth.routes');
+app.use('/api/auth', authRoutes);
+
 // Global error handler
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
