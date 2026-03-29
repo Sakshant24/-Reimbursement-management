@@ -77,9 +77,16 @@ exports.createExpense = async (user, data, file) => {
     // Sequence provided by rule
     let sequence = [];
     if (rule.approverSequence) {
-      sequence = typeof rule.approverSequence === 'string' 
-        ? JSON.parse(rule.approverSequence) // JSON blobs sometimes return as strings
+      let parsed = typeof rule.approverSequence === 'string' 
+        ? JSON.parse(rule.approverSequence)
         : rule.approverSequence;
+        
+      if (!Array.isArray(parsed) && parsed.create) {
+        parsed = parsed.create;
+      }
+      if (Array.isArray(parsed)) {
+        sequence = parsed;
+      }
     }
 
     for (const step of sequence) {

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "19594ba6-daaa-4482-8af4-4b70510239c7",
+    "expenseId": "120fca80-64c4-4b6b-a842-38dc59770fae",
+    "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+    "stepOrder": 1,
+    "isManagerStep": true,
+    "status": "PENDING",
+    "comments": null,
+    "respondedAt": null,
+    "createdAt": "2026-03-29T10:28:30.121Z"
+  },
+  {
+    "id": "a43d2402-ac2b-4a8f-b12e-737e1f1c2365",
+    "expenseId": "120fca80-64c4-4b6b-a842-38dc59770fae",
+    "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+    "stepOrder": 2,
+    "isManagerStep": false,
+    "status": "PENDING",
+    "comments": null,
+    "respondedAt": null,
+    "createdAt": "2026-03-29T10:28:30.127Z"
+  },
+  {
+    "id": "6222ad42-4341-4fb0-8dc6-7aaf26ded154",
+    "expenseId": "120fca80-64c4-4b6b-a842-38dc59770fae",
+    "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+    "stepOrder": 3,
+    "isManagerStep": false,
+    "status": "PENDING",
+    "comments": null,
+    "respondedAt": null,
+    "createdAt": "2026-03-29T10:28:30.133Z"
+  },
+  {
+    "id": "ef855573-724f-4a73-926c-0f916eaea34a",
+    "expenseId": "120fca80-64c4-4b6b-a842-38dc59770fae",
+    "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+    "stepOrder": 4,
+    "isManagerStep": false,
+    "status": "PENDING",
+    "comments": null,
+    "respondedAt": null,
+    "createdAt": "2026-03-29T10:28:30.139Z"
+  }
+]

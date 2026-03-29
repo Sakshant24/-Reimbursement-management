@@ -1,0 +1,145 @@
+[
+  {
+    "id": "120fca80-64c4-4b6b-a842-38dc59770fae",
+    "description": "123 CULINARY AVENUE",
+    "status": "PENDING",
+    "currentStep": 1,
+    "approvals": [
+      {
+        "stepOrder": 1,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "PENDING"
+      },
+      {
+        "stepOrder": 3,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "PENDING"
+      },
+      {
+        "stepOrder": 2,
+        "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+        "status": "PENDING"
+      },
+      {
+        "stepOrder": 4,
+        "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+        "status": "PENDING"
+      }
+    ]
+  },
+  {
+    "id": "2990ccc5-e8d3-44eb-b93c-73c9fc8372c0",
+    "description": "Flight to Mumbai for client meeting",
+    "status": "PENDING",
+    "currentStep": 1,
+    "approvals": [
+      {
+        "stepOrder": 3,
+        "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+        "status": "PENDING"
+      },
+      {
+        "stepOrder": 2,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "PENDING"
+      },
+      {
+        "stepOrder": 1,
+        "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+        "status": "PENDING"
+      }
+    ]
+  },
+  {
+    "id": "76fee69e-9d8a-473a-8854-924aff052fe8",
+    "description": "AWS Summit Europe registration + travel",
+    "status": "APPROVED",
+    "currentStep": 3,
+    "approvals": [
+      {
+        "stepOrder": 2,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "APPROVED"
+      },
+      {
+        "stepOrder": 3,
+        "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+        "status": "APPROVED"
+      },
+      {
+        "stepOrder": 1,
+        "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+        "status": "APPROVED"
+      }
+    ]
+  },
+  {
+    "id": "b8603c05-2e91-4c7c-a4c0-a350e2ebfd5f",
+    "description": "Printer cartridges and stationery",
+    "status": "REJECTED",
+    "currentStep": 2,
+    "approvals": [
+      {
+        "stepOrder": 2,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "REJECTED"
+      },
+      {
+        "stepOrder": 1,
+        "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+        "status": "APPROVED"
+      },
+      {
+        "stepOrder": 3,
+        "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+        "status": "PENDING"
+      }
+    ]
+  },
+  {
+    "id": "d61ff7c3-afe6-496f-beee-b8065ead7072",
+    "description": "Team lunch with client",
+    "status": "APPROVED",
+    "currentStep": 2,
+    "approvals": [
+      {
+        "stepOrder": 1,
+        "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+        "status": "APPROVED"
+      },
+      {
+        "stepOrder": 2,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "APPROVED"
+      },
+      {
+        "stepOrder": 3,
+        "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+        "status": "APPROVED"
+      }
+    ]
+  },
+  {
+    "id": "fabcf7d3-9994-453d-bb6c-d56d665d399c",
+    "description": "Hotel stay during Bangalore conference",
+    "status": "APPROVED",
+    "currentStep": 2,
+    "approvals": [
+      {
+        "stepOrder": 3,
+        "approverId": "d908960d-3eaa-4d82-9c6f-681159451313",
+        "status": "PENDING"
+      },
+      {
+        "stepOrder": 1,
+        "approverId": "0f72bc16-f5d8-4949-9082-224789697441",
+        "status": "APPROVED"
+      },
+      {
+        "stepOrder": 2,
+        "approverId": "dc893a85-7a17-45e3-aa0c-5997181c8106",
+        "status": "APPROVED"
+      }
+    ]
+  }
+]

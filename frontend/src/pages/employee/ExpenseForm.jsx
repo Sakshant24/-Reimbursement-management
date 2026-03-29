@@ -84,7 +84,7 @@ const ExpenseForm = () => {
 
       <div className="bg-surface border border-border p-6 rounded-lg shadow-2xl mb-6 relative">
         <div className="absolute top-0 left-0 w-1 h-full bg-accent/20"></div>
-        <h3 className="text-xs font-mono text-muted mb-4 uppercase tracking-widest font-bold border-b border-border pb-2">Scan Receipt with AI (Optional)</h3>
+        <h3 className="text-xs font-mono text-muted mb-4 uppercase tracking-widest font-bold border-b border-border pb-2">AI Neural Receipt Scanner (Tesseract OCR)</h3>
         <OcrUpload onParsed={handleOcrParsed} />
         <p className="text-[10px] uppercase font-mono tracking-widest mt-3 text-muted">Neural parse auto-attaches proof receipt and pre-fills form data down below.</p>
       </div>
