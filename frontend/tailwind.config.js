@@ -13,10 +13,12 @@ export default {
         accent: 'var(--accent)',
         danger: 'var(--danger)',
         warning: 'var(--warning)',
-      },
-      textColor: {
         primary: 'var(--text-primary)',
         muted: 'var(--text-muted)',
+      },
+      fontFamily: {
+        display: ['Syne', 'sans-serif'],
+        mono: ['DM Mono', 'monospace'],
       }
     },
   },
