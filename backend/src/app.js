@@ -13,7 +13,10 @@ app.get('/health', (req, res) => {
 
 // Mount Routes
 const authRoutes = require('./routes/auth.routes');
+const userRoutes = require('./routes/user.routes');
+
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 
 // Global error handler
 app.use((err, req, res, next) => {
