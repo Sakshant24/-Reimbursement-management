@@ -147,3 +147,32 @@ exports.getExpenseById = async (user, expenseId) => {
   
   return expense;
 };
+
+exports.adminOverride = async (user, expenseId, { status, reason }) => {
+  const expense = await prisma.expense.findFirst({
+    where: { id: expenseId, companyId: user.companyId }
+  });
+
+  if (!expense) throw new AppError('Expense not found in your company', 404);
+
+  let appendedOcrRawText = expense.ocrRawText || '';
+  appendedOcrRawText += `\n[AUDIT] Admin override by ${user.name}: Forced status to ${status}. Reason: ${reason}`;
+
+  const updated = await prisma.expense.update({
+    where: { id: expenseId },
+    data: {
+      status,
+      ocrRawText: appendedOcrRawText
+    }
+  });
+
+  await prisma.approval.updateMany({
+    where: { expenseId, status: 'PENDING' },
+    data: {
+      status: status === 'APPROVED' ? 'APPROVED' : 'REJECTED',
+      comments: `Admin Override: ${reason}`
+    }
+  });
+
+  return updated;
+};

@@ -27,3 +27,12 @@ exports.getExpenseById = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.adminOverride = async (req, res, next) => {
+  try {
+    const data = await expenseService.adminOverride(req.user, req.params.id, req.body);
+    return success(res, data, `Expense overridden to ${req.body.status}`, 200);
+  } catch (err) {
+    next(err);
+  }
+};

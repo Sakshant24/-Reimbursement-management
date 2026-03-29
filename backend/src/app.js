@@ -17,11 +17,13 @@ const authRoutes = require('./routes/auth.routes');
 const userRoutes = require('./routes/user.routes');
 const expenseRoutes = require('./routes/expense.routes');
 const approvalRoutes = require('./routes/approval.routes');
+const ruleRoutes = require('./routes/rule.routes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/expenses', expenseRoutes);
 app.use('/api/approvals', approvalRoutes);
+app.use('/api/rules', ruleRoutes);
 
 // Serve static receipts
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
